@@ -1696,8 +1696,6 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 22px;
-  border:solid 1px #AD974F;
-  padding:5px 10px;
 }
 
 h6, .h6 {
@@ -2424,7 +2422,11 @@ output {
 .light-text-box {
   color: #fff;
   padding:15px;
-  text-align: left;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 500px;
+  border:1px solid #fff;
+  padding: 30px;
 }
 .bullets {
   padding-left: 20px;
@@ -2434,7 +2436,6 @@ output {
 }
 
 .light-text-box h5{
-  text-align: center;
   color: #AD974F;
 }  
 .slideshowbtn{
@@ -11774,7 +11775,7 @@ fieldset[disabled] .btn-default {
 .btn-primary {
   color: #fff;
   background: #ad974f; /* Old browsers */
-    background: -moz-linear-gradient(top, #ad974f 0%, #8e793e 100%); /* FF3.6-15 */
+  background: -moz-linear-gradient(top, #ad974f 0%, #8e793e 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #ad974f 0%,#8e793e 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #ad974f 0%,#8e793e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ad974f', endColorstr='#8e793e',GradientType=0 ); /* IE6-9 */
@@ -25732,8 +25733,8 @@ a.icon {
 }
 
 .icon-gray-light {
-  background: #868686;
-  color: #fff;
+  background: #fff;
+  color: #231F20;
 }
 
 .icon-gray-lighter {
@@ -26010,7 +26011,6 @@ a.icon-rect.fa-behance:hover, a.icon-circle.fa-behance:hover, a.icon-outlined.fa
   content: '';
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  border: 1px solid #e5e5e5;
 }
 
 .progress-bar-circle canvas {
@@ -38130,8 +38130,18 @@ fieldset[disabled] .bg-primary .btn-java {
   -o-background-size: cover;
   background-position: center top;
   background-attachment: fixed;
+  color:#fff;
+  text-align: center;
 }
-
+.rdparallax h5{
+  color:#AD974F;
+}
+.rdparallax h2{
+  color:#fff;
+}
+.rdparallax h4{
+  color:#fff;
+}
 
 /** 3.6  RD Flickrfeed */
 .widget-flickrfeed .flickr-item {
