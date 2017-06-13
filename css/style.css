@@ -2421,11 +2421,11 @@ output {
 
 .light-text-box {
   color: #fff;
-  padding:15px;
+  padding:30px;
   text-align: center;
   margin: 0 auto;
   max-width: 500px;
-  border:1px solid #fff;
+  border:1px solid #AD974F;
   padding: 30px;
 }
 .bullets {
@@ -2441,30 +2441,37 @@ output {
 .slideshowbtn{
   text-align: center;
 }
-.white-border-box {
-  border:1px solid #fff;
-  padding:15px;
+.dark-box {
+  padding:30px 15px;
   text-align: left;
+  background-color: #231F20;
 }
-.white-border-box hr{
+.dark-box hr{
   background-color: #fff;
 }
-.white-border-box a{
+.dark-box ul{
   color: #fff;
 }
-.white-border-box h5{
+.dark-box a{
+  color: #fff;
+  text-transform: uppercase;
+}
+.dark-box a:hover{
+  color: #EAEAEA;
+}
+.dark-box h5{
   color: #AD974F;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   border:none;
   padding:0px;
 }
-.white-border-box h4{
+.dark-box h4{
   color:#AD974F;
   font-size: 20px;
 }
 
-.white-border-box p{
+.dark-box p{
   color: #fff;
 }
 
@@ -2500,7 +2507,7 @@ output {
   top: -90px; 
   visibility: hidden;
 }
-.pinkfooter {
+.offwhite-footer {
   background-color: #EAEAEA;
   padding:15px;
   content: "";
@@ -2508,7 +2515,7 @@ output {
   clear:both;
   width: 100%
 }
-.purplefooter {
+.brand-color-footer {
   background: #ad974f; /* Old browsers */
   background: -moz-linear-gradient(top, #ad974f 0%, #8e793e 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #ad974f 0%,#8e793e 100%); /* Chrome10-25,Safari5.1-6 */
@@ -11147,8 +11154,8 @@ mark, .mark {
 }
 
 .bg-lighter {
-  background: #f3f3f3;
-  fill: #f3f3f3;
+  background: #EAEAEA;
+  fill: #EAEAEA;
 }
 
 .bg-lightest {
@@ -25678,8 +25685,13 @@ a.icon {
 }
 
 .icon-default {
-  color: #434445;
-  border-color: #e5e5e5;
+  background: #ad974f; /* Old browsers */
+  background: -moz-linear-gradient(top, #ad974f 0%, #8e793e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ad974f 0%,#8e793e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ad974f 0%,#8e793e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ad974f', endColorstr='#8e793e',GradientType=0 ); /* IE6-9 */
+  border:none;
+  color: #fff;
 }
 
 .icon-darker {
@@ -29741,6 +29753,9 @@ html .page .offset-top-124 {
 html .page .offset-top-130 {
   margin-top: 130px;
 }
+html .page .offset-top-mobile-30 {
+  margin-top: 30px;
+}
 
 @media (min-width: 480px) {
   html .page .offset-xs-top-0 {
@@ -29865,6 +29880,9 @@ html .page .offset-top-130 {
   }
   html .page .offset-sm-top-130 {
     margin-top: 130px;
+  }
+  html .page .offset-top-mobile-30 {
+  margin-top: 0px;
   }
 }
 
@@ -35276,7 +35294,7 @@ fieldset[disabled] .bg-primary .btn-java {
   margin: 15px -2px 0;
 }
 
-.purplemediabox{
+.brand-color-media-box{
   background: #ad974f; /* Old browsers */
   background: -moz-linear-gradient(top, #ad974f 0%, #8e793e 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, #ad974f 0%,#8e793e 100%); /* Chrome10-25,Safari5.1-6 */
@@ -35290,7 +35308,7 @@ fieldset[disabled] .bg-primary .btn-java {
 }
 @media screen and (-webkit-min-device-pixel-ratio:0)
   and (min-resolution:.001dpcm) {
-    .purplemediabox{
+    .brand-color-media-box{
   margin-top: -40px;
 }
 }
@@ -38131,6 +38149,7 @@ fieldset[disabled] .bg-primary .btn-java {
   background-position: center top;
   background-attachment: fixed;
   color:#fff;
+  background-color: #231F20;
   text-align: center;
 }
 .rdparallax h5{
@@ -38141,6 +38160,10 @@ fieldset[disabled] .bg-primary .btn-java {
 }
 .rdparallax h4{
   color:#fff;
+}
+.awards {
+  max-width: 600px;
+  margin:0 auto;
 }
 
 /** 3.6  RD Flickrfeed */
@@ -48576,7 +48599,11 @@ html[class*="ie"] .dtp-hand, html[class*="ie"] .dtp-hour-hand {
 
 .ui-to-top:hover {
   color: #fff;
-  background: #d7d7d7;
+  background: #917d42;
+  background: -moz-linear-gradient(top, #917d42 0%, #726132 100%);
+  background: -webkit-linear-gradient(top, #917d42 0%,#726132 100%);
+  background: linear-gradient(to bottom, #917d42 0%,#726132 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#917d42', endColorstr='#726132',GradientType=0 );
 }
 
 .ui-to-top.active {
