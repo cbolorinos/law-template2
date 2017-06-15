@@ -2423,10 +2423,15 @@ output {
   color: #fff;
   padding:30px;
   text-align: center;
-  margin: 0 auto;
-  max-width: 500px;
+  margin: 0 15px;
   border:1px solid #AD974F;
   padding: 30px;
+}
+@media(min-width: 480px){
+  .light-text-box{
+    max-width: 460px;
+    margin: 0 auto;
+  }
 }
 .bullets {
   padding-left: 20px;
@@ -2442,7 +2447,7 @@ output {
   text-align: center;
 }
 .dark-box {
-  padding:30px 15px;
+  padding:15px 15px 30px;
   text-align: left;
   background-color: #231F20;
 }
@@ -8149,6 +8154,7 @@ a:hover,
 a:focus {
   text-decoration: none;
   outline: none;
+  color:#AD974F;
 }
 
 iframe {
@@ -24321,6 +24327,214 @@ html.lt-ie11 .btn-santos-svg:hover {
 /*# sourceMappingURL=materialdesignicons.css.map */
 /** 2.16 Thumbnail Addons */
 
+.project {
+    margin-bottom: 30px;
+    vertical-align: top;
+    margin-right: 30px;
+    float: left;
+    cursor: pointer;
+    width:100%;
+}
+
+.caption {
+  font-style: italic;
+  color:#EAEAEA;
+}
+
+.project figure {
+    position: relative;
+    display: inline-block;
+}
+
+.project figure img {
+    width: 100%;
+}
+.btn-warning bnt-action{
+    margin: 0% 0% auto;    
+}
+
+figcaption .project-details {
+    display: block;
+    font-size: 16px;
+    /*line-height: 33px;*/
+    color: #000;
+    /*height: 27px;*/
+    width: 100%;
+    margin: 0 auto 5px auto;
+    /*margin-bottom: 5px;*/
+    overflow: hidden;
+}
+.project figure:hover figcaption {
+    background:#d81e05;
+}
+.project figure:hover figcaption .project-details {
+    color: #fff;
+}
+
+figcaption .project-price {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-size: 22px;
+    text-align: right;
+    margin-top: 8px;
+    letter-spacing: -1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+figcaption .project-creator {
+    font-size: 13px;
+    color: #545454;
+    display: block;
+}
+
+figcaption .project-creator {
+    font-size: 13px;
+    color: #545454;
+    display: block;
+}
+
+.project figure .actions button {
+    padding: 13px 20px;
+    font-size: 16px;
+    top: 32%;
+    position: absolute;
+    left: 50%;
+    width: 90%;
+    margin-left: -45%;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+
+.project figure .actions-horizontal button {
+    padding: 13px 20px;
+    font-size: 16px;
+    top: 22%;
+    position: absolute;
+    left: 50%;
+    width: 90%;
+    margin-left: -45%;
+    line-height: 18px;
+    letter-spacing: 1px;
+} 
+
+.project figure:hover .actions {
+    background-color: rgba(142,121,62,.8);
+    top: 55%;
+}
+
+.project figure:hover .actions-horizontal {
+    background-color: rgba(142,121,62,.8);
+    top: 35%;
+}
+
+.project figure:hover .actions ul {
+    display:inline;
+}
+
+.project figure .actions {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    top: 65%;
+    left:0;
+    right:0;
+    z-index: 1;
+    opacity: 1;
+    background-color: rgba(35,31,32,.6);
+    -ms-transition: all .4s ease-out;
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+    color: white;
+    padding:2%;
+    text-align:center;
+}
+
+.project figure .actions-horizontal {
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    top: 45%;
+    left:0;
+    right:0;
+    z-index: 1;
+    opacity: 1;
+    background-color: rgba(35,31,32,.6);
+    -ms-transition: all .4s ease-out;
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
+    color: white;
+    padding:2%;
+    text-align:center;
+}
+
+@media (min-width: 768px) {
+  .project figure .actions {
+    top: 65%;
+  }
+  .project figure:hover .actions {
+    top: 55%;
+  }
+  .project figure .actions-horizontal {
+    top: 45%;
+  }
+  .project figure:hover .actions-horizontal {
+    top: 35%;
+  }
+}
+
+@media (min-width: 992px) {
+  .project figure .actions {
+    top: 50%;
+    left:0;
+    right:0;
+    padding:2%;
+    
+  }
+  .project figure:hover .actions {
+    top: 45%;
+    padding-top:0%;
+  }
+  .project figure .actions-horizontal {
+    top: 30%;
+    left:0;
+    right:0;
+    padding:2%;
+    
+  }
+  .project figure:hover .actions-horizontal {
+    top: 25%;
+    padding-top:0%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project figure .actions {
+    top: 60%;
+    left:0;
+    right:0;
+    font-size:1em;
+    padding:2%;
+  }
+  .project figure:hover .actions {
+    top: 50%;
+  }
+  .project figure .actions-horizontal {
+    top: 50%;
+    left:0;
+    right:0;
+    font-size:1em;
+    padding:2%;
+  }
+  .project figure:hover .actions-horizontal {
+    top: 40%;
+  }
+}
+
 .thumbnail {
   transition: .3s;
   border: none;
@@ -29756,6 +29970,9 @@ html .page .offset-top-130 {
 html .page .offset-top-mobile-30 {
   margin-top: 30px;
 }
+html .page .offset-top-mobile-40 {
+  margin-top: 40px;
+}
 
 @media (min-width: 480px) {
   html .page .offset-xs-top-0 {
@@ -29946,6 +30163,9 @@ html .page .offset-top-mobile-30 {
   }
   html .page .offset-md-top-130 {
     margin-top: 130px;
+  }
+  html .page .offset-top-mobile-40 {
+  margin-top: 0px;
   }
 }
 
@@ -33139,7 +33359,15 @@ fieldset[disabled] .box-planning-type-4 .btn-default {
 .box-member img {
   display: inline-block;
 }
-
+.biolist{
+  padding-left: 0;
+}
+.biolist-main{
+  padding-left: 0;
+}
+.biolist-main li {
+  margin: 15px 0;
+}
 @media (min-width: 1200px) {
   .box-member .box-member-wrap {
     position: absolute;
@@ -35300,7 +35528,7 @@ fieldset[disabled] .bg-primary .btn-java {
   background: -webkit-linear-gradient(top, #ad974f 0%,#8e793e 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #ad974f 0%,#8e793e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ad974f', endColorstr='#8e793e',GradientType=0 ); /* IE6-9 */
-  margin-top: -90px;
+  margin-top: -95px;
   border-radius: 0px 0px 10px 10px;
   padding:10px;
   position: absolute;
@@ -35309,7 +35537,7 @@ fieldset[disabled] .bg-primary .btn-java {
 @media screen and (-webkit-min-device-pixel-ratio:0)
   and (min-resolution:.001dpcm) {
     .brand-color-media-box{
-  margin-top: -40px;
+  margin-top: -41px;
 }
 }
 .rd-navbar-sidebar-toggle.rd-navbar-fixed .rd-navbar-footer .list-inline > li {
@@ -38152,14 +38380,20 @@ fieldset[disabled] .bg-primary .btn-java {
   background-color: #231F20;
   text-align: center;
 }
-.rdparallax h5{
-  color:#AD974F;
-}
 .rdparallax h2{
   color:#fff;
 }
+.rdparallax h3{
+  color:#AD974F;
+}
 .rdparallax h4{
   color:#fff;
+}
+.rdparallax h5{
+  color:#AD974F;
+}
+.rdparallax h6{
+  color:#8E793E;
 }
 .awards {
   max-width: 600px;
