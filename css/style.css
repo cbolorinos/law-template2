@@ -2459,6 +2459,8 @@ output {
 }
 .dark-box a{
   color: #fff;
+}
+.dark-box .bullets a{
   text-transform: uppercase;
 }
 .dark-box a:hover{
@@ -24420,12 +24422,10 @@ figcaption .project-creator {
 
 .project figure:hover .actions {
     background-color: rgba(142,121,62,.8);
-    top: 55%;
 }
 
 .project figure:hover .actions-horizontal {
     background-color: rgba(142,121,62,.8);
-    top: 35%;
 }
 
 .project figure:hover .actions ul {
@@ -24456,7 +24456,7 @@ figcaption .project-creator {
     display: block;
     position: absolute;
     bottom: 0px;
-    top: 45%;
+    top: 55%;
     left:0;
     right:0;
     z-index: 1;
@@ -24476,14 +24476,8 @@ figcaption .project-creator {
   .project figure .actions {
     top: 65%;
   }
-  .project figure:hover .actions {
-    top: 55%;
-  }
   .project figure .actions-horizontal {
-    top: 45%;
-  }
-  .project figure:hover .actions-horizontal {
-    top: 35%;
+    top: 60%;
   }
 }
 
@@ -24495,20 +24489,11 @@ figcaption .project-creator {
     padding:2%;
     
   }
-  .project figure:hover .actions {
-    top: 45%;
-    padding-top:0%;
-  }
   .project figure .actions-horizontal {
-    top: 30%;
+    top: 52%;
     left:0;
     right:0;
     padding:2%;
-    
-  }
-  .project figure:hover .actions-horizontal {
-    top: 25%;
-    padding-top:0%;
   }
 }
 
@@ -24520,18 +24505,12 @@ figcaption .project-creator {
     font-size:1em;
     padding:2%;
   }
-  .project figure:hover .actions {
-    top: 50%;
-  }
   .project figure .actions-horizontal {
-    top: 50%;
+    top: 62%;
     left:0;
     right:0;
     font-size:1em;
     padding:2%;
-  }
-  .project figure:hover .actions-horizontal {
-    top: 40%;
   }
 }
 
@@ -29973,6 +29952,9 @@ html .page .offset-top-mobile-30 {
 html .page .offset-top-mobile-40 {
   margin-top: 40px;
 }
+html .page .offset-top-mobile-41 {
+  margin-top: 40px;
+}
 
 @media (min-width: 480px) {
   html .page .offset-xs-top-0 {
@@ -30101,6 +30083,9 @@ html .page .offset-top-mobile-40 {
   html .page .offset-top-mobile-30 {
   margin-top: 0px;
   }
+  html .page .offset-top-mobile-40 {
+  margin-top: 0px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -30165,6 +30150,9 @@ html .page .offset-top-mobile-40 {
     margin-top: 130px;
   }
   html .page .offset-top-mobile-40 {
+  margin-top: 0px;
+  }
+  html .page .offset-top-mobile-41 {
   margin-top: 0px;
   }
 }
@@ -33367,6 +33355,20 @@ fieldset[disabled] .box-planning-type-4 .btn-default {
 }
 .biolist-main li {
   margin: 15px 0;
+}
+.video-container {
+  position:relative;
+  padding-bottom:56.25%;
+  padding-top:30px;
+  height:0;
+  overflow:hidden;
+}
+.video-container iframe, .video-container object, .video-container embed {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
 @media (min-width: 1200px) {
   .box-member .box-member-wrap {
@@ -38380,19 +38382,25 @@ fieldset[disabled] .bg-primary .btn-java {
   background-color: #231F20;
   text-align: center;
 }
-.rdparallax h2{
+.rdparallax-team{
+  background-image: url(ricky_bg.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center top;
+  color:#fff;
+  background-color: #231F20;
+  text-align: center;
+}
+.rdparallax h2, .rdparallax-team h2, .rdparallax h4, .rdparallax-team h4 {
   color:#fff;
 }
-.rdparallax h3{
+.rdparallax h3, .rdparallax-team h3, .rdparallax h5, .rdparallax-team h5 {
   color:#AD974F;
 }
-.rdparallax h4{
-  color:#fff;
-}
-.rdparallax h5{
-  color:#AD974F;
-}
-.rdparallax h6{
+.rdparallax h6, .rdparallax-team h6{
   color:#8E793E;
 }
 .awards {
@@ -42366,9 +42374,6 @@ ul.thumbnails {
     }
 }
 li { list-style-type:none;}
-
-::selection { background: #ff5e99; color: #FFFFFF; text-shadow: 0; }
-::-moz-selection { background: #ff5e99; color: #FFFFFF; }
 
 @-webkit-keyframes fadeOut {
   0% {
