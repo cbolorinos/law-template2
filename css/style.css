@@ -1586,6 +1586,10 @@ hr {
   border-top: 1px solid #AD974F;
 }
 
+.hr-white {
+  border-top: 1px solid #fff;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -2808,6 +2812,13 @@ select[multiple].input-sm,
   font-size: 16px;
   line-height: 1.33333;
   border-radius: 10px;
+}
+.btn-white{
+  color:#000;
+  background-color: #fff;
+}
+.btn-white{
+  background-color:#EAEAEA;
 }
 
 select.input-lg, .input-group-lg > select.form-control,
