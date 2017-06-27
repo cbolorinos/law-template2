@@ -2817,7 +2817,7 @@ select[multiple].input-sm,
   color:#000;
   background-color: #fff;
 }
-.btn-white{
+.btn-white:hover{
   background-color:#EAEAEA;
 }
 
