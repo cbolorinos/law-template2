@@ -30091,12 +30091,6 @@ html .page .offset-top-mobile-41 {
   html .page .offset-sm-top-130 {
     margin-top: 130px;
   }
-  html .page .offset-top-mobile-30 {
-  margin-top: 0px;
-  }
-  html .page .offset-top-mobile-40 {
-  margin-top: 0px;
-  }
 }
 
 @media (min-width: 992px) {
@@ -30159,6 +30153,9 @@ html .page .offset-top-mobile-41 {
   }
   html .page .offset-md-top-130 {
     margin-top: 130px;
+  }
+  html .page .offset-top-mobile-30 {
+  margin-top: 0px;
   }
   html .page .offset-top-mobile-40 {
   margin-top: 0px;
@@ -33357,6 +33354,17 @@ fieldset[disabled] .box-planning-type-4 .btn-default {
 
 .box-member img {
   display: inline-block;
+}
+.info-icons{
+  text-align: right;
+}
+.info-icons img{
+  width:25px;
+  opacity: 1;
+  margin-left: 10px;
+}
+.info-icons img:hover{
+  opacity: 0.6;
 }
 .biolist{
   padding-left: 0;
